@@ -1,0 +1,67 @@
+live_config_reload: true
+
+env:
+  TERM: alacritty
+
+window:
+  padding:
+    x: 20
+    y: 20
+
+  title: Alacritty
+
+  class:
+    instance: Alacritty
+    general:  Alacritty
+
+font:
+  normal:
+    #family: 
+    style:  Regular
+
+  size: 9.0
+
+cursor:
+  style:            Beam
+  unfocused_hollow: true
+  thickness:        0.15
+
+
+# Colors (Material Theme)
+colors:
+  # Default colors
+  primary:
+    background: '#0A0E14'
+    foreground: '#eeffff'
+
+  # Normal colors
+  normal:
+    black:   '#000000'  # Arbitrary
+    red:     '#e53935'
+    green:   '#91b859'
+    yellow:  '#F9AF4F'
+    blue:    '#6182b8'
+    magenta: '#ff5370'  # Dark pink of the original material theme
+    cyan:    '#39adb5'
+    white:   '#a0a0a0'  # Arbitrary
+
+  # Bright colors
+  bright:
+    black:   '#4e4e4e'  # Arbitrary
+    red:     '#ff5370'
+    green:   '#c3e88d'
+    yellow:  '#F9AF4F'
+    blue:    '#82aaff'
+    magenta: '#f07178'  # Pink of the original material theme
+    cyan:    '#89ddff'
+    white:   '#ffffff'  # Arbitrary
+
+
+mouse_bindings:
+  - { mouse: Right, action: Paste }
+
+mouse:
+  triple_click: { threshold: 300 }
+  hide_when_typing: true
+
+
