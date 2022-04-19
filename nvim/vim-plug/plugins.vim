@@ -34,6 +34,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'ayu-theme/ayu-vim' 
 "Terminal
     Plug 'kassio/neoterm'
+"Java
+    Plug 'mfussenegger/nvim-jdtls'
 call plug#end()
 
 
