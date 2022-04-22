@@ -2,8 +2,7 @@
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 
-bspc monitor -d I II III IV V VI VII VIII IX X
-
+bspc monitor -d I II III IV V VI VII VIII
 bspc config border_width         2
 bspc config window_gap          0
 
@@ -16,8 +15,11 @@ bspc config focus_follows_pointer true
 bspc rule -a Chromium desktop='^1'
 bspc rule -a firefox desktop='^1'
 bspc rule -a Steam state=floating desktop='^9' 
-bspc rule -a Spotify desktop='^10' 
-bspc rule -a Alacritty desktop='^2' --title 
+bspc rule -a com.spotify.Client desktop='^10' 
+bspc rule -a Alacritty desktop='^2' 
+bspc rule -a Evince desktop='^4'  
+bspc rule -a Org.gnome.Nautilus desktop='^3'  
+bspc rule -a Code desktop='^5'  
 
 # Border
 bspc config normal_border_color \#2E3436  # janela não ativa
