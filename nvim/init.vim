@@ -15,6 +15,15 @@ let g:lightline = {
 
 set number
 
+"Linting
+
+let g:ale_linters = {
+    \ 'python': ['pylint'],
+    \ 'vim': ['vint'],
+    \ 'cpp': ['clang'],
+    \ 'c': ['clang']
+\}
+
 "Java
 nnoremap <A-o> <Cmd>lua require'jdtls'.organize_imports()<CR>
 nnoremap crv <Cmd>lua require('jdtls').extract_variable()<CR>

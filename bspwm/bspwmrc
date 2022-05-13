@@ -2,7 +2,7 @@
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 
-bspc monitor -d I II III IV V VI VII VIII
+bspc monitor -d I II III IV V VI VII VIII  
 bspc config border_width         2
 bspc config window_gap          0
 
@@ -20,6 +20,7 @@ bspc rule -a Alacritty desktop='^2'
 bspc rule -a Evince desktop='^4'  
 bspc rule -a Org.gnome.Nautilus desktop='^3'  
 bspc rule -a Code desktop='^5'  
+bspc rule -a Eclipse desktop='^5'  
 
 # Border
 bspc config normal_border_color \#2E3436  # janela não ativa

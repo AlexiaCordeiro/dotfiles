@@ -36,6 +36,10 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'kassio/neoterm'
 "Java
     Plug 'mfussenegger/nvim-jdtls'
+"Clang
+    Plug 'deoplete-plugins/deoplete-clang'
+"Linting
+    Plug 'dense-analysis/ale'
 call plug#end()
 
 
