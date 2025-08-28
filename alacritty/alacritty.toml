@@ -1,0 +1,59 @@
+
+[[mouse.bindings]]
+action = "Paste"
+mouse = "Right"
+
+[colors.bright]
+black = "#4e4e4e"
+blue = "#82aaff"
+cyan = "#89ddff"
+green = "#c3e88d"
+magenta = "#f07178"
+red = "#ff5370"
+white = "#ffffff"
+yellow = "#F9AF4F"
+
+[colors.normal]
+black = "#000000"
+blue = "#6182b8"
+cyan = "#39adb5"
+green = "#91b859"
+magenta = "#ff5370"
+red = "#e53935"
+white = "#a0a0a0"
+yellow = "#F9AF4F"
+
+[colors.primary]
+background = "#0A0E14"
+foreground = "#eeffff"
+
+[cursor]
+style = "Beam"
+thickness = 0.15
+unfocused_hollow = true
+
+[env]
+TERM = "alacritty"
+
+[font]
+size = 9.0
+
+[font.normal]
+style = "Regular"
+
+[mouse]
+hide_when_typing = true
+
+[window]
+title = "Alacritty"
+
+[window.class]
+general = "Alacritty"
+instance = "Alacritty"
+
+[window.padding]
+x = 20
+y = 20
+
+[general]
+live_config_reload = true
