@@ -2,9 +2,8 @@
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 
-bspc monitor eDP-1 -d 'I' 'II' 'III' 'IV' 'V' 
-bspc monitor HDMI-2 -d 'VI' 'VII' 'VIII' 'IX' 'X'
-#bspc monitor HDMI-2 -d 'VI' 'VII' 'VIII' 'IX' 'X'
+#Monitor
+/usr/local/bin/monitor.sh &
 
 bspc config border_width         2
 bspc config window_gap          0
@@ -48,11 +47,11 @@ xsetroot -cursor_name left_ptr &
 #Numlock
 /usr/bin/numlockx &
 
-#Monitor
-/usr/local/bin/monitor.sh &
+#Picom
+picom -b --config ~/.config/picom/picom.conf
 
 #Nextcloud
 com.nextcloud.desktopclient.nextcloud &
 
 #Wallpaper
-nitrogen --restore &
+feh --bg-fill ~/Imagens/wallpapers/4jeO4ugM-Fondos-de-Pantalla-Sistema-Solar-53.png --bg-fill ~/Imagens/wallpapers/4jeO4ugM-Fondos-de-Pantalla-Sistema-Solar-53.png &

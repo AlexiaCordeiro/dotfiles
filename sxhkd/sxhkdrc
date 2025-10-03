@@ -2,6 +2,8 @@
 # wm independent hotkeys
 #
 
+super + @space + 1
+  poweroff
 # terminal emulator
 super + Return
 	alacritty
