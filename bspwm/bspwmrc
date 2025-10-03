@@ -2,8 +2,9 @@
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 
-bspc monitor HDMI2 -d 'I' 'II' 'III' 'IV' 'V' 
-bspc monitor eDP1 -d 'VI' 'VII' 'VIII' 'IX' 'X'
+bspc monitor eDP-1 -d 'I' 'II' 'III' 'IV' 'V' 
+bspc monitor HDMI-2 -d 'VI' 'VII' 'VIII' 'IX' 'X'
+#bspc monitor HDMI-2 -d 'VI' 'VII' 'VIII' 'IX' 'X'
 
 bspc config border_width         2
 bspc config window_gap          0
@@ -48,7 +49,7 @@ xsetroot -cursor_name left_ptr &
 /usr/bin/numlockx &
 
 #Monitor
-xrandr --output HDMI2 --primary --mode 1920x1080 --output eDP1 --mode 1920x1080 --right-of HDMI2 &
+/usr/local/bin/monitor.sh &
 
 #Nextcloud
 com.nextcloud.desktopclient.nextcloud &
