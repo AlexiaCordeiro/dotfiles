@@ -1,55 +1,38 @@
 #!/bin/bash
 
-function capslock() {
-
+capslock() {
   caps=$(xset -q | grep Caps | awk '{ print $4 }')
-
-  if [ $caps == 'off' ]; then
-    echo "%{T1}%{T-}"
+  
+  if [ "$caps" = 'off' ]; then
+    echo "󰌌"  # Caps off
   else
-    echo "%{T1}בּ%{T-}"
+    echo "󰘲"  # Caps on
   fi
-
 }
 
-function numlock {
-
+numlock() {
   num=$(xset -q | grep Num | awk '{ print $8 }')
-
-  if [ $num == 'off' ]; then
-    echo "%{T1}%{T-}"
+  
+  if [ "$num" = 'off' ]; then
+    echo ""  # Num off
   else
-    echo "%{T1}%{T-}"
+    echo ""  # Num on
   fi
-
 }
 
-function scroll() {
-
+scrolllock() {
   scroll=$(xset -q | grep Scroll | awk '{ print $12 }')
-
-  if [ $scroll == 'off' ]; then
-    echo "%{T1}%{T-}"
+  
+  if [ "$scroll" = 'off' ]; then
+    echo ""  # Scroll off
   else
-    echo "%{T1}%{T-}"
-fi
-
+    echo ""  # Scroll on
+  fi
 }
 
-main () {
-
-  if [ "$1" == "-c"  ]; then
-    capslock
-  fi
-
-  if [ "$1" == "-n"  ]; then
-    numlock
-  fi
-
-  if [ "$1" == "-s"  ]; then
-    scroll
-  fi
-
-}
-
-main $1
+case "$1" in
+  -c) capslock ;;
+  -n) numlock ;;
+  -s) scrolllock ;;
+  *) echo "Usage: $0 {-c|-n|-s}" ;;
+esac
