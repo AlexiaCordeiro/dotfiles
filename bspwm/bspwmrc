@@ -54,4 +54,4 @@ picom -b --config ~/.config/picom/picom.conf
 com.nextcloud.desktopclient.nextcloud &
 
 #Wallpaper
-feh --bg-fill ~/Imagens/wallpapers/4jeO4ugM-Fondos-de-Pantalla-Sistema-Solar-53.png --bg-fill ~/Imagens/wallpapers/4jeO4ugM-Fondos-de-Pantalla-Sistema-Solar-53.png &
+feh --bg-fill ~/Imagens/wallpapers/clairebell.jpg --bg-fill ~/Imagens/wallpapers/clairebell.jpg &

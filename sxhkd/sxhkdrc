@@ -2,15 +2,18 @@
 # wm independent hotkeys
 #
 
-super + @space + 1
-  poweroff
+# Backslash
+ctrl + Shift + b
+	xdotool key backslash
+
 # terminal emulator
 super + Return
 	alacritty
 
 # program launcher
 super + @space
-	rofi -show drun run window ssh -show-icons
+	~/.config/rofi/launchers/type-4/launcher.sh
+	#/usr/local/bin/dmenu-themed
 	#dmenu_run
 
 # make sxhkd reload its configuration files:
@@ -19,7 +22,14 @@ super + Escape
 
 # flameshot
 super + shift + s
-	flameshot gui
+	~/.config/rofi/applets/bin/screenshot.sh
+
+#Volume Ctrl
+super + F11
+	~/.config/rofi/applets/bin/volume.sh
+super + ctrl + alt + l
+	~/.config/rofi/applets/bin/quicklinks.sh
+
 #
 # bspwm hotkeys
 #
