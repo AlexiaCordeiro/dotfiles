@@ -133,5 +133,4 @@ source ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting/zsh-sy
 export PATH=$home_bin:$PATH
 export PATH="$HOME/.local/bin:$PATH"
 alias mpc='mpc -p 6601'
-eval "$(zoxide init zsh)"
 
