@@ -16,4 +16,8 @@
     - picom
     - alacritty
 
-More to add later
+## Tools used
+    - bat instead of cat
+    - exa instead of ls
+    - zoxide instead of cd
+    - btop instead of htop

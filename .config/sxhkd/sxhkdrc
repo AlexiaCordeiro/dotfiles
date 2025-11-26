@@ -31,7 +31,8 @@ super + ctrl + alt + l
 	~/.config/rofi/applets/bin/quicklinks.sh
 super + F12
 	~/.config/rofi/applets/bin/brightness.sh
-
+super + shift + Escape  
+	~/.config/rofi/applets/bin/powermenu.sh
 #
 # bspwm hotkeys
 #
