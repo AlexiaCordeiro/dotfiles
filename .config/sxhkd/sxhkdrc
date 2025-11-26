@@ -13,8 +13,6 @@ super + Return
 # program launcher
 super + @space
 	~/.config/rofi/launchers/type-4/launcher.sh
-	#/usr/local/bin/dmenu-themed
-	#dmenu_run
 
 # make sxhkd reload its configuration files:
 super + Escape
