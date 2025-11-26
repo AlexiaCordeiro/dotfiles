@@ -134,3 +134,5 @@ export PATH=$home_bin:$PATH
 export PATH="$HOME/.local/bin:$PATH"
 alias mpc='mpc -p 6601'
 
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+eval "$(zoxide init --cmd cd zsh)"
