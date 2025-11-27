@@ -54,3 +54,6 @@ com.nextcloud.desktopclient.nextcloud &
 
 #Wallpaper
 feh --bg-fill ~/Imagens/wallpapers/clairebell.jpg --bg-fill ~/Imagens/wallpapers/another-wallpaper.jpg &
+
+#Monitor
+xrandr --output DP-2 --primary --mode 1920x1080 --output eDP-1 --mode 1920x1080 --left-of DP-2
